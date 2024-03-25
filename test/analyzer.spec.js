@@ -51,7 +51,7 @@ describe('analyzer', () => {
     it('should return 0 for "' + TEST_TEXT_NO_NUMBERS + '"', () => {
       expect(analyzer.getNumberSum(TEST_TEXT_NO_NUMBERS)).toBe(0);
     });
-    
+
     it('should return 0 for "' + TEST_TEXT_NOT_A_NUMBER + '"', () => {
       expect(analyzer.getNumberSum(TEST_TEXT_NOT_A_NUMBER)).toBe(0);
     });
@@ -62,10 +62,10 @@ describe('analyzer', () => {
 
     it('should return 10 for "' + TEST_TEXT_NUMBERS + '"', () => {
       expect(analyzer.getNumberSum(TEST_TEXT_NUMBERS)).toBe(10);
-    });    
+    });
   });
 
-});  
+});
 
 //TODO: Remove .skip to execute the test for optional functionalities.
 describe.skip('Optional:', () => {
@@ -77,7 +77,7 @@ describe.skip('Optional:', () => {
     it('should return 0 for "' + TEST_TEST_EMPTY + '"', () => {
       expect(analyzer.getWordCount(TEST_TEST_EMPTY)).toBe(0);
     });
-    
+
     it('should return 0 for "' + TEST_TEST_SPACES + '"', () => {
       expect(analyzer.getWordCount(TEST_TEST_SPACES)).toBe(0);
     });
@@ -91,14 +91,14 @@ describe.skip('Optional:', () => {
     it('should return 0 for "' + TEST_TEST_EMPTY + '"', () => {
       expect(analyzer.getCharacterCount(TEST_TEST_EMPTY)).toBe(0);
     });
-    
+
     it('should return 7 for "' + TEST_TEST_SPACES + '"', () => {
       expect(analyzer.getCharacterCount(TEST_TEST_SPACES)).toBe(7);
     });
 
     it('should return 18 for "' + TEST_TEXT_PUNCTUATION_MARKS + '"', () => {
       expect(analyzer.getCharacterCount(TEST_TEXT_PUNCTUATION_MARKS)).toBe(18);
-    });    
+    });
   });
 
   describe('analyzer.getCharacterCountExcludingSpaces', () => {
@@ -112,7 +112,7 @@ describe.skip('Optional:', () => {
 
     it('should return 0 for "' + TEST_TEXT_PUNCTUATION_MARKS + '"', () => {
       expect(analyzer.getCharacterCountExcludingSpaces(TEST_TEXT_PUNCTUATION_MARKS)).toBe(0);
-    });     
+    });
   });
 
   describe('analyzer.getAverageWordLength', () => {
@@ -126,14 +126,14 @@ describe.skip('Optional:', () => {
 
     it('should return 0 for "' + TEST_TEXT_PUNCTUATION_MARKS + '"', () => {
       expect(analyzer.getAverageWordLength(TEST_TEXT_PUNCTUATION_MARKS)).toBe(0);
-    });    
+    });
   });
 
   describe('analyzer.getNumberCount', () => {
     it('should return 0 for "' + TEST_TEST_EMPTY + '"', () => {
       expect(analyzer.getNumberCount(TEST_TEST_EMPTY)).toBe(0);
     });
-    
+
     it('should return 0 for "' + TEST_TEST_SPACES + '"', () => {
       expect(analyzer.getNumberCount(TEST_TEST_SPACES)).toBe(0);
     });
@@ -143,7 +143,7 @@ describe.skip('Optional:', () => {
     it('should return 0 for "' + TEST_TEST_EMPTY + '"', () => {
       expect(analyzer.getNumberSum(TEST_TEST_EMPTY)).toBe(0);
     });
-    
+
     it('should return 0 for "' + TEST_TEST_SPACES + '"', () => {
       expect(analyzer.getNumberSum(TEST_TEST_SPACES)).toBe(0);
     });
